@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a9dots04.myapplication.DataActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar8"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorprimary1"/>
+    </android.support.v7.widget.Toolbar
+        >
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect2"
+            android:id="@+id/vendorlayout"
+            android:layout_marginBottom="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Address"
+                    android:textColor="@color/colorprimary1"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:textSize="14dp" />
+                <TextView
+                    android:text="No Address found"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorprimary1"
+                    android:padding="5dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:id="@+id/address"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Zip code"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="5dp"
+                android:textColor="@color/colorprimary1"
+                android:textSize="14dp" />
+            <TextView
+                android:text="Enter Valid Zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/zipcode"
+                android:textStyle="bold"
+                android:textColor="@color/colorprimary1"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+        </LinearLayout>
+            <ImageView
+                android:layout_marginTop="150dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:background="@drawable/map1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <Button
+android:padding="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textStyle="normal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+            android:layout_below="@+id/Login_btn5"
+            android:background="@drawable/layout"
+            android:id="@+id/Login_btn1"
+            android:textColor="@color/colorprimary1"
+            android:layout_marginTop="500dp"
+            android:gravity="center"
+            android:text="MAP Location"/>
+            </LinearLayout>
+
+</RelativeLayout>

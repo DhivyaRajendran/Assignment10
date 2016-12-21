@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorprimary1"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/color"
+    android:text="Are you sure you want to forward request???"
+    android:textSize="14dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ok"
+        android:background="@color/colorPrimary"
+        android:text="ok"/>
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="125dp"
+        android:id="@+id/cancel"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="cancel"/>
+    </LinearLayout>
+</LinearLayout>
